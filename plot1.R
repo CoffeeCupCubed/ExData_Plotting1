@@ -8,7 +8,7 @@ plot1<-function(){
   energy<-read.csv.sql("household_power_consumption.txt",header=TRUE,sep=';',
                       sql="select * from file where (Date=='1/2/2007' OR Date=='2/2/2007')")
   
-  #Opens png device and sets text size to 1.
+  #Opens png device, creates a fresh png file and sets text size to 1.
   png(file="plot1.png")
   par(cex=1)
   

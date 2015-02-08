@@ -11,7 +11,8 @@ plot4<-function(){
   energy$dateTime<-paste(energy$Date,energy$Time,sep=" ")
   energy$dateTime<-strptime(energy$dateTime,'%d/%m/%Y %H:%M:%S')
   
-  #open png device and sets text size to 0.1, and 4 panels (ordered column-wise by mfcol) for 4 charts
+  #'open png device,creates a fresh png file and sets text size to 0.1, and creates 4 panels 
+  #'(ordered column-wise by mfcol) for 4 charts
   png(file="plot4.png")
   par(cex=0.1,mfcol=c(2,2))
   

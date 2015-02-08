@@ -12,7 +12,7 @@ plot3<-function(){
   energy$dateTime<-paste(energy$Date,energy$Time,sep=" ")
   energy$dateTime<-strptime(energy$dateTime,'%d/%m/%Y %H:%M:%S')
   
-  #open png device and sets text size to 1
+  #open png device, creates a fresh png file and sets text size to 1
   png(file="plot3.png")
   par(cex=1)
   
